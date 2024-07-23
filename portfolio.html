@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'> 
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script type="text/javascript" src="port.js"></script>>
+    <style>
+        body{
+            font-family: 'poppins';
+            margin-top: -20px;
+        }
+        .layout{
+    display: flex;
+    background-color: rgb(0, 21, 36);
+    height:  100px;
+    margin-left: -5px;
+    margin-right: -5px;
+    position: sticky;
+    top: 0px;
+}
+.nav{
+    display: flex;
+    align-items:center ;
+    display: flex;
+background-color:rgba(255, 255, 255, 0.192) ;
+position:sticky ;
+  height: 60px;
+}
+nav img{
+    border-radius: 50%;
+    width:70px;
+    height:70px;
+    margin-top: 14px;
+    margin-left: 5px;
+     vertical-align: sub;
+   
+}
+.ull{
+    
+    position: relative;
+    left: 500px;
+    
+}
+ li{
+    list-style: none;
+}
+
+ .aa{
+    text-decoration:none ;
+    color:white;
+    font-size: 17px;
+    display:inline-block ;
+    font-weight:bold ;
+    padding: 10px;
+    margin-left: 20px;
+    font-family: 'Poppins';
+ 
+  
+  
+}
+h1{
+    font-size: 24px;
+    color: white;
+    font-family: 'poppins',sans-serif;
+    margin-left:93px ;
+    position: relative;
+    bottom: 70px;
+  
+}
+a:hover{
+    background-color:rgba(0, 21, 36, 0.678) ;
+    color: chocolate;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    margin-left: 20px;
+    min-width: 190px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #d6d3d3;
+    color:chocolate}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+h2{
+    text-align: center;
+}
+button{
+    width:200px;
+    height: 45px;
+    display: inline-block;
+    background-color:rgba(81, 96, 236, 0.925);
+    
+    color:white;
+    border: 1px solid white;
+    
+    font-size: 15px;
+    border-radius: 2px;
+
+}
+button:hover{
+    cursor: pointer;
+    background-color:rgba(163, 173, 255, 0.925) ;
+}
+#first{
+    background-image: url("after1.png");
+    width: 993px;
+    height: 500px;
+    background-attachment: scroll;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+    margin-left: 250px;
+}
+#second{
+    background-image: url("after2.png");
+    width: 993px;
+    height: 500px;
+    background-attachment: scroll;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+    margin-left: 250px;  
+}
+#third{
+    background-image: url("after3.png");
+    width: 993px;
+    height: 500px;
+    background-attachment: scroll;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+    margin-left: 250px;  
+}
+#fourth{
+    background-image: url("after4.png");
+    width: 993px;
+    height: 500px;
+    background-attachment: scroll;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+    margin-left: 250px;  
+}
+address{
+    text-align: center;
+}
+h3{
+    color: blueviolet;
+    text-align: center;
+}
+footer{
+  
+  background-color:rgb(62, 62, 88);
+  height: 260px;
+  text-align: center;
+  
+}
+.term li{
+  display: inline-block;
+  color: white;
+}
+i{
+  color:white;
+  padding-left: 13px;
+  font-size: 33px;
+}
+.copy{
+  background-color:  rgb(14, 21, 61);;
+  position: relative;
+  top:20px;
+  height: 35px;
+  text-align: center;
+  color:white;
+  font-size:12px ;
+}
+.uu li{
+  font-size: 30px;
+  padding: 10px;
+ border:4px solid white;
+ border-radius:50px;
+  font-family: 'Pacifico'
+}
+    </style>
+</head>
+<body>
+  
+    <div class="layout">
+        
+           
+        <nav>
+         <img src="logo.png"><h1>INTERIOR DECOR</h1>
+        </nav>
+        <nav>
+         <ul class="ull">
+            <a class="aa" href='frontpage_grid.html'><li>Home</li></a>
+            <div class="dropdown">
+                <a  class="aa"><li>Menu</li></a>
+                <div class="dropdown-content">
+                <a href="diningroom.html">Dinning Room </a>
+                <a href="bedroom.html"> Bedroom</a>
+                <a href="kitchen.html">Kitchen</a>
+                <a href="patio.html">Patio</a>
+                <a href="smalloffice.html">Small Office</a>
+                <a href="kidsroom.html">Kids Room</a>
+                </div>
+              </div>
+            <a class="aa" href='blog.html'><li>Blog</li></a>
+            <a class="aa" href='portfolio.html'><li>Portfolio</li></a>
+            <a  class="aa"  href='contact.html'><li>Contact</li></a>
+         </ul>
+        </nav>
+    </div>
+    <h2>Think you can't afford beautiful interior design? Think again.</h2>
+    <p style="text-align: center">"The essence of interior design will always be about people and how they live. ...
+        Be faithful to your own taste, because nothing you really like is ever out of style.
+        A design isn't finished until someone is using it."
+        "When something feels off, it is</p>
+    <h2>Calm Transitional Bedroom Interior Design Ideas</h2>
+    <p id="p1"></p>
+    <div id="first"></div>
+    
+    <div style="margin-left: 550px;"><button onclick="before11()">Before</button><button onclick="after11()">After</button></div>
+    
+    <address>Thank you for all of the beautiful ideas! I just love my new living room design. I love that this 
+        is a perfect blend of contemporary without being too cold. Thank you so much for achieving this for us. - Liz</address>
+        
+      <h2>Sleek and Modern Living Room Interior Design</h2>
+      <p id="p2"></p>
+      <div id="second"></div>
+      <div style="margin-left: 550px;"><button onclick="before22()">Before</button><button onclick="after22()">After</button></div>
+   <address>You really captured our style and it's not an easy one! Thank you so much for the amazing design ideas, it's exactly what we wanted. - Andrew</address>
+   <h2>Elegant and Light Kitchen Makeover</h2>
+      <p id="p3"></p>
+      <div id="third"></div>
+      <div style="margin-left: 550px;"><button onclick="before33()">Before</button><button onclick="after33()">After</button></div>
+   <address>I love the kitchen interior design so much!! Thank you.... it’s perfect! - Christina</address>
+   <h2>Curated Glam Interior Design Ideas</h2>
+      <p id="p4"></p>
+      <div id="fourth"></div>
+      <div style="margin-left: 550px;"><button onclick="before44()">Before</button><button onclick="after44()">After</button></div>
+   <address>This is fantastic, thank you for being so flexible. I like the gray you added and we'll go with the keystone on the bed wall. Thanks again for your hard work on my bedroom interior design! - Todd</address>
+   <footer>
+
+    <div class="term">
+        <p style="color: white;">Simplicity is the ultimate sophistication.No pattern without some sort of meaning</p>
+        <ul>
+           <a href="privacy.html"><li>Privacy Policy   |</li></a> 
+            <li>Security   |</li>
+        <a href="terms.html">  <li>Terms&Condition</li></a> 
+        </ul>
+        <ul class="uu">
+            <li style="font-size: 60px,;">In matters of style, swim with the current. </li>
+        </ul>
+    </div>
+    <div class="icon">
+        <a href=" https://www.facebook.com"> <i class="fa fa-facebook "></i></a>
+        <a href="https://www.instagram.com"> <i class="fa fa-instagram "></i></a>
+         <a href=" https://www.twitter.com"> <i class="fa fa-twitter"></i></a>
+        <a href=""> <i class="fa fa-phone "></i></a>
+    </div>
+    <div class="copy">
+     CopyrightⒸ2023 Interior decor reserved by | Samman Qaiser
+    </div>
+    </footer>
+</body>
+</html> 

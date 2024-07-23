@@ -1,0 +1,52 @@
+
+    
+   
+ 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign up</title>
+   
+    <link rel="stylesheet" href="signup.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'> 
+    <script type="text/javascript" src="port.js"></script>
+</head>
+
+<body>
+<div class="outer">
+        <div class="inner">
+    <h1 class="hh">Sign Up</h1>
+    <div class="border">
+        <div class="image">
+
+        </div>
+        <div class="form">
+         <form id="frm1" method="post" action="signupp.php" >
+             <br>
+             
+             <label class="lnn">User Name</label>
+             <input  class="inn" type="text" placeholder="User Name" name="sname" required><br>
+             <label class="lnn">DOB</label><br>
+             <input class="inn" type="date" placeholder="Date of Birth" name="dob" required><br>
+             <label class="lnn">Email</label><br>
+             <input class="inn" type="email" placeholder="Email" name="email" required><br>
+             <label class="lnn" style="margin-bottom:30px" for="">Select Gender:</label>
+             <input  class="i" type="radio" name="Gender" value="Male"><label class="l" style="position: relative;top:60px;left:-120px;padding: 10px;">Male</label>
+             <input class="i" type="radio" name="Gender" value="Female"><label class="l" style="position: relative;top:60px;left:-120px">Female</label>
+             <br>
+             <label class="lnn" style="position: relative;top:70px;">Password</label>
+             <input class="inn"  style="position: relative;top:70px;" type="password" placeholder="Password" name="pass"  required><br>
+             <button class="sum" onclick="signup()">Sign Up</button>
+             <hr>
+             <button class="google" ><img src="google.png"><a href="https://www.google.com">Sign Up with google</a></button>
+             <br>
+             <button class="fb"><img src="fb.png"><a href="https://www.facebook.com">Sign Up with facebook</a></button>
+         </form>
+        </div>
+    </div>
+</div>
+</div>
+  
+ </body>
+ </html>

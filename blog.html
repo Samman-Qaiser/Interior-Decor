@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'> 
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <style>
+        body{
+            font-family: 'poppins';
+
+        }
+        body {
+    margin: 0;
+    padding: 0;
+}
+.blog{
+    display:grid ;
+    height:650px;
+    margin-left: 50px;
+    margin-top: 30px;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows:150px 250px 250px;
+}
+.blog2{
+    display:grid ;
+    height:650px;
+    margin-left: 50px;
+    margin-top: 30px;
+    
+    grid-template-columns:repeat(4,1fr) ;
+    grid-template-rows:150px 250px 250px 250px 100px;
+}
+.item1{
+    grid-area: 1/1/2/3;
+ 
+}
+.item2{
+    /* background-image: url("blog.png"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-area: 1/3/4/4;
+}
+.item4{
+
+    grid-area: 2/3/4/4;
+}
+.item3{
+    background-image: url("beechy.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-area: 2/3/4/5;
+}
+.content{
+    grid-area:2/1/4/3;
+ 
+}
+.content2{
+    grid-area:2/1/6/3;
+ 
+}
+h4{
+    color:black;
+}
+.hrr{
+    color: gray;
+  
+}
+.mul{
+    width: 778px;
+    margin-left: 50px;
+    margin-top: 30px;
+    height: 550px;
+    margin: auto;
+    background-image: url("multiple.png");
+
+}
+.layout{
+    display: flex;
+    background-color: rgb(0, 21, 36);
+    height:  100px;
+    margin-left: -5px;
+    margin-right: -5px;
+    position: sticky;
+    top: 0px;
+}
+.nav{
+    display: flex;
+    align-items:center ;
+    display: flex;
+background-color:rgba(255, 255, 255, 0.192) ;
+position:sticky ;
+  height: 60px;
+}
+nav img{
+    border-radius: 50%;
+    width:70px;
+    height:70px;
+    margin-top: 14px;
+    margin-left: 5px;
+     vertical-align: sub;
+   
+}
+.ull{
+    
+    position: relative;
+    left: 500px;
+    
+}
+ li{
+    list-style: none;
+}
+
+ .aa{
+    text-decoration:none ;
+    color:white;
+    font-size: 17px;
+    display:inline-block ;
+    font-weight:bold ;
+    padding: 10px;
+    margin-left: 20px;
+    font-family: 'Poppins';
+ 
+  
+  
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    margin-left: 20px;
+    min-width: 190px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #d6d3d3;
+color:chocolate}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+h1{
+    font-size: 24px;
+    color: white;
+    font-family: 'poppins',sans-serif;
+    margin-left:93px ;
+    position: relative;
+    bottom: 70px;
+  
+}
+a:hover{
+    background-color:rgba(0, 21, 36, 0.678) ;
+    color: chocolate;
+}
+footer{
+  
+  background-color:rgb(62, 62, 88);
+  height: 260px;
+  text-align: center;
+  position: relative;
+  top:400px;
+  
+}
+.term li{
+  display: inline-block;
+  color: white;
+}
+i{
+  color:white;
+  padding-left: 13px;
+  font-size: 23px;
+}
+.copy{
+  background-color:  rgb(14, 21, 61);;
+  position: relative;
+  top:50px;
+  height: 35px;
+  text-align: center;
+  color:white;
+  font-size:12px ;
+}
+.uu li{
+  font-size: 30px;
+  padding: 10px;
+   border:4px solid white;
+   border-radius:50px;
+  font-family: 'Pacifico'
+}
+video{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,200px);
+    position: relative;
+    top:400px;
+    margin-left: 50px;
+}
+.outline{
+    grid-area: 1/1/2/3;
+}
+.paragraph{
+    grid-area: 2/1/5/3;
+}
+.vid{
+    grid-area: 2/3/5/5;
+    z-index: -1;
+}
+
+    </style>
+</head>
+<body>
+    <div class="layout">
+        
+           
+            <nav>
+             <img src="logo.png"><h1>INTERIOR DECOR</h1>
+            </nav>
+            <nav>
+             <ul class="ull">
+                <a class="aa" href='frontpage_grid.html'><li>Home</li></a>
+                <div class="dropdown">
+                    <a  class="aa"><li>Menu</li></a>
+                    <div class="dropdown-content">
+                    <a href="diningroom.html">Dinning Room </a>
+                    <a href="bedroom.html"> Bedroom</a>
+                    <a href="kitchen.html">Kitchen</a>
+                    <a href="patio.html">Patio</a>
+                    <a href="smalloffice.html">Small Office</a>
+                    <a href="kidsroom.html">Kids Room</a>
+                    </div>
+                  </div>
+                <a class="aa" href='blog.html'><li>Blog</li></a>
+                <a class="aa" href='portfolio.html'><li>Portfolio</li></a>
+                <a  class="aa"  href='contact.html'><li>Contact</li></a>
+             </ul>
+            </nav>
+        </div>
+    
+    <div class="blog">
+        <div class="item1">
+            <h2 style="text-align: left;">How Much Does an Interior Designer Cost in 2023?</h2>
+            <h4>January 2, 2023</h4>
+            <hr class="hrr">
+        </div>
+        <div class="content">
+           <p style="color:black"> How much does an interior designer cost? If you’re in the market for
+             finding an interior designer, you’ll see prices and services vary quite a bit,
+              depending on the designer and their cost structure. Whether they charge an 
+              hourly or flat rate, interior designers exercise a variety of ways to figure 
+              out their prices. Some take into account project size while others charge a commission
+               percentage on the total cost.<br> Regardless, being informed of the options is a good place to start.
+               On average, a typical interior designer will cost anywhere from $2,000 all the way up to $12,000,
+                excluding furniture. Fortunately, new alternatives like online interior design services can 
+                help you save $1,000s! Online interior designer service costs range from $79 to $1849 and the 
+                interior design fees are typically flat.<br> Starting a project online is a budget savvy way to
+                 connect with professional interior designers in a quick and easy way. The benefit of online 
+                 interior design is that you can work on your own schedule and preview how everything will look
+                 .<br> Regardless, being informed of the options is a good place to start.
+                 On average, a typical interior designer will cost anywhere from $2,000 all the way up to $12,000,
+                  excluding furniture. Fortunately, new alternatives like online interior design services can 
+                  help you save $1,000s! Online interior designer service costs range from $79 to $1849 and the 
+                  interior design fees are typically flat.<br> Starting a project online is a budget savvy way to
+                   connect with professional interior designers in a quick and easy way. The benefit of online 
+                   interior design is that you can work on your own schedule and preview how everything will look.
+                   Regardless, being informed of the options is a good place to start.
+                   On average, a typical interior designer will cost anywhere from $2,000 all the way up to $12,000,
+                    excluding furniture. Fortunately, new alternatives like online interior design services can 
+                    help you save $1,000s! Online interior designer service costs range from $79 to $1849 and the 
+                    interior design fees are typically flat
+        </p>
+        </div>
+        <div class="item2">
+            <video muted autoplay loop plays-inline class="backvedio">
+                <source src="vedio.mp4">
+            </video>
+        </div>
+        </div>
+        <div class="blog2">
+            <div class="item1">
+                <h2 style="text-align: left;">Before & After: Transitional Beachy House Interior
+                </h2>
+                <h4>June 6, 2023</h4>
+                <hr class="hrr">
+            </div>
+            <div class="content2">
+               <p style="color:black"> Are you on a quest to find a new and unique style to add to your home? One
+                 that has a calming atmosphere but still looks modern and up-to-date? This remodeling story could deliver the inspiration you’re looking for. Through careful design and attention to detail, we have created a sanctuary that captures the eye and leaves a lasting impression. So, let’s explore this stunning beachy house interior transformation.  
+
+
+               <h2> The Challenge: Beachy House Interior</h2>
+                The client just finished building her dream home, and the time had come to complement it with some outstanding furniture and decor. The idea was to start with the living room, breakfast nook, kitchen, and dining room. Having beachy home interiors in mind, the client contacted Decorilla ready to begin an online interior design transformation. In short, she asked for a designer who could: 
+                <ul >
+                   <li style="list-style: disc;"> Use beachy interior design to create a cohesive flow between different rooms</li>
+                   <li style="list-style: disc;">Design a stylish, yet inviting living room</li>
+                  
+                   <li style="list-style: disc;">Use beachy cottage decor ideas in the kitchen and dining room</li>
+                   <li style="list-style: disc;">Source all new furnishing, keeping the best balance between quality and cost-effectiveness in mind</li>
+                </ul>
+              
+            </p>
+            </div>
+            <div class="item3"></div>
+            </div>
+        <h2 style=" margin-left: 50px;
+        margin-top: 30px;">Beachy Cottage Decor Ideas & Moodboard</h2>
+        <div class="mul"></div>
+        <p style=" margin-left: 50px;
+        margin-top: 30px;">The inspiration gallery that the client provided for a beachy house interior was breathtaking. 
+            The images perfectly encapsulated the serene and peaceful aesthetic that can be achieved with 
+            a coastal interior design theme. From the sandy beige and aqua blues to the misty grays and driftwood browns, these beachy interior design examples imbued a sense of relaxation and tranquility. Meanwhile, abundant natural elements such as seashells, sea glass, and driftwood
+             helped create a cohesive and harmonious atmosphere in each space.
+             Casey’s beachy house interior was a home run for anyone who appreciates elegant design and comfortable living spaces. With a curated yet relaxed tone, she created a refined atmosphere, oozing all assets of a classic coastal home in a contemporary fashion. From the subtle color palette to the carefully selected furnishings, her beachy interior moodboard 
+             seamlessly integrated the beauty of nature into the comfort of modern living </p>
+             <div class="blog">
+                <div class="item1">
+                    <h2 style="text-align: left;">Southern Interior Design Ideas That Ooze Welcoming Hospitality
+                       </h2>
+                    <h4> June 2, 2023</h4>
+                    <hr class="hrr">
+                </div>
+                <div class="content">
+                   <p style="color:black"> Southern interior design is renowned for its charming and hospitable ambiance.
+                     It encapsulates the essence of Southern living. Simply put, these spaces are inviting, comfortable, and 
+                     timeless. If you want to infuse your home with Southern charm, you’re in the right place! We have gathered
+                      inspiring ideas embodying the Southern decorating style. So, get ready to transform your space into a welcoming abode!
+                      <img src="south.png">
+                </p>
+                </div>
+                <div class="item4" ><h2>1. Add Warmth and Grace with Cozy Textures</h2>
+                <p>Create a cozy and elegant Southern-style living room that embodies the essence of the South. Opt for plush upholstered furniture in neutral tones, like creamy whites or soft beiges. In addition, incorporate pops of color through accent pillows and throws. Lastly, 
+                    traditional elements like a crafted wooden coffee table or a fireplace mantel can enhance the warm and gracious glow.</p>
+                <h2>
+                    2.Blend Old and New with a Southern Decorating Style 
+                </h2>
+                <p>Make a lasting impression with a welcoming entryway that sets the tone for your home. Consider 
+                    a grand wooden front door adorned with ornate details and complement it with a vintage console table.
+                     Furthermore, decorate the table with family photographs and fresh flowers. A curated collection of 
+                     cherished heirlooms are sure to impress too. Consequently, your warm and inviting entryway will make
+                      guests feel at home.
+                    </p>
+                    <h2>3.Arrange a Classic Dining Space</h2>
+                    <p>Incorporate elegance into your dining space with traditional Southern interior design elements. Opt for a sturdy wooden dining table. In addition, you can pair it with comfortable chairs. Adorn the table with fine china, crystal glassware, and a statement centerpiece, such as a beautiful floral arrangement. Finally, gather around this classic setting to enjoy memorable meals with loved ones!</p>
+            </div>
+                </div>
+                <div class="main">
+                    <div class="outline">
+                        <h2 style="text-align: left;">Top 12 Living Room Sofa Ideas: Exciting Styles for Stunning Spaces
+                           </h2>
+                        <h4> June 21, 2023</h4>
+                        <hr class="hrr">
+                    </div>
+                    <div class="paragraph">
+                        <p>Imagine your living room as the heart of your home – it’s where comfort,
+                         relaxation, and socializing intersect. A critical component to fostering this harmony is the right 
+                         sofa. So let’s dive into some incredible living room sofa ideas that’ll help you bring your perfect
+                          living space to life.
+                          
+                    </p>
+                    <h2>1. Consider your Space</h2>
+                    <p>Assess your living room size and layout. Ensure your desired sofa will fit comfortably, complementing
+                         other furniture rather than overwhelming the room.</p>
+                    <h2>
+                       2. Material Matters:
+                    </h2>
+                    <p>Upholstery choice significantly impacts your sofa’s longevity and look. Leather brings a rich, sophisticated
+                         feel, while fabric offers warmth and a wide variety of patterns and colors.
+                        </p>
+                        <h2>3.Comfort is Key</h2>
+                        <p>The most beautiful sofa won’t be loved if it’s not comfortable. Consider the depth and height of the sofa 
+                            and the density of the cushions. After all, your sofa should be your relaxation haven.</p>
+                            <h2>
+                                4. Color Coordination:
+                             </h2>
+                             <p>Upholstery choice significantly impacts your sofa’s longevity and look. Leather brings a rich, sophisticated
+                                  feel, while fabric offers warmth and a wide variety of patterns and colors.
+                                 </p>
+                </div>
+                <div class="vid">
+                    <video muted autoplay loop plays-inline class="backvedio">
+                        <source src="vvv.mp4">
+                    </video>
+                </div>
+                    </div>
+                    
+                
+                
+
+                <footer>
+
+                    <div class="term">
+                        <p style="color: white;">Simplicity is the ultimate sophistication.No pattern without some sort of meaning</p>
+                        <ul>
+                            <a href="privacy.html"><li>Privacy Policy   |</li></a> 
+                                   <li>Security   |</li>
+                               <a href="terms.html">  <li>Terms&Condition</li></a> 
+                        </ul>
+                        <ul class="uu">
+                            <li style="font-size: 60px,;">In matters of style, swim with the current. </li>
+                        </ul>
+                    </div>
+                    <div class="icon">
+                        <a href=" https://www.facebook.com"> <i class="fa fa-facebook "></i></a>
+                        <a href="https://www.instagram.com"> <i class="fa fa-instagram "></i></a>
+                         <a href=" https://www.twitter.com"> <i class="fa fa-twitter"></i></a>
+                        <a href=""> <i class="fa fa-phone "></i></a>
+                    </div>
+                    <div class="copy">
+                     CopyrightⒸ2023 Interior decor reserved by | Samman Qaiser
+                    </div>
+                    </footer>
+</body>
+</html>
